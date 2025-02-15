@@ -56,10 +56,11 @@ az container create \
 az acr credential show --name <Registry_Name>
 ``` 
 - Verify Deployment
-```
+
 ```
 az container show --name <Container_Name> --resource-group <MY_RG>
 ```
+
 
 ### Differences Between ACI & ACR
 
