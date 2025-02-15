@@ -72,3 +72,30 @@ az container show --name <Container_Name> --resource-group <MY_RG>
 | Integration| Integrated with Azure services  | Integrated with Azure services |
 | Management | Managed through Azure CLI and portal | Managed through Azure CLI and portal |
 
+#### Install & Start up the Redis Locally 
+- Install Dependances
+```
+sudo apt update
+sudo apt install redis-tools
+```
+- Run the Container Locally
+```
+docker run -d -p 6379:6379 myredisregistry.azurecr.io/redis-azure:7.0.12
+```
+- Running redis With redis-cli
+```
+redis-cli -h localhost -p 6379
+```
+![Screenshot from 2025-02-16 01-30-15](https://github.com/user-attachments/assets/d3e0fad2-4110-4e6c-9041-2c814247a905)
+
+#### Interact with redis Using redis library 
+- install redis library
+```
+python3 -m pip install redis
+```
+![Screenshot from 2025-02-16 01-52-41](https://github.com/user-attachments/assets/685c9d66-b05a-43da-a8ad-49e2c790d91a)
+- Run the Python Script
+```
+python3 RedisScript.py
+```
+
