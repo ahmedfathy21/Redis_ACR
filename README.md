@@ -47,7 +47,9 @@ az container create \
   --registry-password <ACR_PASSWORD>
   --os-Type <Linux / Windows> #Depends on needs 
 ```
-- Get ACR credentials >> The output ![alt text](image.png) >> User the value as the ACR_PASSWORD
+- Get ACR credentials >> The output  ![image](https://github.com/user-attachments/assets/abfa3197-b124-4f7a-b50c-d6975653ba68)
+
+ >> User the value as the ACR_PASSWORD
 ```
 az acr credential show --name <Registry_Name>
 ``` 
