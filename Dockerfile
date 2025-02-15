@@ -3,6 +3,8 @@
 # Use the official Redis image from the Docker Hub
 FROM redis:7.0.12
 
+WORKDIR /app
+
 # Expose the Redis port
 EXPOSE 6379
 
