@@ -57,7 +57,17 @@ az acr credential show --name <Registry_Name>
 ``` 
 - Verify Deployment
 ```
+```
 az container show --name <Container_Name> --resource-group <MY_RG>
 ```
 
- 
+### Differences Between ACI & ACR
+
+| Feature    | ACI (Azure Container Instances) | ACR (Azure Container Registry) |
+|------------|---------------------------------|--------------------------------|
+| Purpose    | Runs containerized applications | Manages container images       |
+| Usage      | Deploys and manages containers  | Stores and manages Docker container images |
+| Scope      | Container runtime environment   | Container registry level       |
+| Integration| Integrated with Azure services  | Integrated with Azure services |
+| Management | Managed through Azure CLI and portal | Managed through Azure CLI and portal |
+
