@@ -1,4 +1,6 @@
 # Redis Deployment _ ACR 
+![Screenshot from 2025-02-15 12-48-01](https://github.com/user-attachments/assets/5432ac90-2d7b-4655-829d-82598a55e12e)
+
 - This Docker file just Build an redis-image
 
 ##  Steps to build Image & create , deploy the container in ACR 
